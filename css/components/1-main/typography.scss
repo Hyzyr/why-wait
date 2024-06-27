@@ -1,0 +1,39 @@
+/* Typography */
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 48px;
+}
+h3 {
+  font-size: 32px;
+}
+h4 {
+  font-size: 22px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 18px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $black;
+  font-family: $font-primary;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.8em;
+
+  &.lg {
+    font-size: 18px;
+  }
+}
