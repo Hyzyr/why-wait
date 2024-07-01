@@ -33,7 +33,10 @@
       align-items: center;
       margin-left: auto;
       gap: 10px;
-      
+
+      .button--border-primary {
+        font-size: 16px;
+      }
       .button--main-primary {
         font-size: 16px;
       }
