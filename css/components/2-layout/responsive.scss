@@ -1,15 +1,22 @@
 @media (max-width: 1280px) {
+  @include typo-1280;
 }
 @media (max-width: 1160px) {
   .container {
     padding: 0 40px;
   }
+  @include typo-1160;
+  @include components-1160;
+  @include header-1160;
 }
 @media (max-width: 1025px) {
   .container {
     padding: 0 30px;
   }
+  @include components-1025;
+  @include containers-1025 ;
   @include header-1025;
+  @include home-1025;
 }
 
 @media (max-width: 940px) {
@@ -21,6 +28,10 @@
   .container {
     padding: 0 15px;
   }
+  @include typo-768;
+  @include containers-768;
+  @include header-768;
+  @include home-768;
 }
 @media (max-width: 580px) {
   ._hideMob {

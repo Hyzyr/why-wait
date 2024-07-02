@@ -25,38 +25,58 @@
           <a href="/" class="header__inner-logo logo">
             <img src="./images/logo.svg" alt="WhyWait" />
           </a>
-          <div class="header__inner-search">
-            <div class="input">
-              <button class="input__icon-right">
-                <span class="icon material-symbols-outlined">search</span>
-              </button>
-              <input type="text" placeholder="Search here... " />
-            </div>
-            <a href="#" class="logo logo--pro">
-              <img src="images/logo-pro.svg" alt="WhyWait pro" />
-            </a>
-          </div>
-          <div class="header__inner-actions">
-            <button class="iconButton">
-              <span class="icon material-symbols-outlined">notifications</span>
-            </button>
-            <button class="iconButton">
-              <span class="icon material-symbols-outlined">favorite</span>
-            </button>
-            <button class="iconButton">
-              <span class="icon material-symbols-outlined">message</span>
-            </button>
-            <button class="button button--border-primary">Creations</button>
-            <div class="userinfo">
-              <div class="avatar">
-                <img src="images/users/demo-user.png" alt="Maria kim" />
+          <nav class="nav" id="menu">
+            <div class="nav__inner">
+              <div class="header__inner-search">
+                <div class="input">
+                  <button class="input__icon-right">
+                    <span class="icon material-symbols-outlined">search</span>
+                  </button>
+                  <input type="text" placeholder="Search here... " />
+                </div>
+                <div class="nav__item _pro">
+                  <div class="nav__item-text">Get acces to</div>
+                  <a href="#" class="logo logo--pro">
+                    <img src="images/logo-pro.svg" alt="WhyWait pro" />
+                  </a>
+                </div>
               </div>
-              <div class="userinfo__info">
-                <strong>Maria Kim</strong>
-                <small>active</small>
+              <div class="header__inner-actions">
+                <a href="#" class="nav__item">
+                  <span class="iconButton">
+                    <span class="icon material-symbols-outlined"
+                      >notifications</span
+                    >
+                  </span>
+                  <div class="nav__item-text">Notifications</div>
+                </a>
+                <a href="#" class="nav__item">
+                  <span class="iconButton">
+                    <span class="icon material-symbols-outlined">favorite</span>
+                  </span>
+                  <div class="nav__item-text">Favorites</div>
+                </a>
+                <a href="#" class="nav__item">
+                  <span class="iconButton">
+                    <span class="icon material-symbols-outlined">message</span>
+                  </span>
+                  <div class="nav__item-text">Messages</div>
+                </a>
+
+                <button class="button button--border-primary">Creations</button>
+                <div class="userinfo">
+                  <div class="avatar">
+                    <img src="images/users/demo-user.png" alt="Maria kim" />
+                  </div>
+                  <div class="userinfo__info">
+                    <strong>Maria Kim</strong>
+                    <small>active</small>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          </nav>
+          <button class="burger" id="menuBtn"><span></span></button>
         </div>
       </div>
     </header>
@@ -99,6 +119,6 @@
       </div>
     </main>
     <!-- #main end -->
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
   </body>
 </html>

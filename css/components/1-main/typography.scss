@@ -37,3 +37,51 @@ p {
     font-size: 18px;
   }
 }
+
+@mixin typo-1280 {
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 42px;
+  }
+}
+@mixin typo-1160 {
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 38px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  p {
+    &.lg {
+      font-size: 16px;
+    }
+  }
+}
+@mixin typo-768 {
+  h1 {
+    font-size: 34px;
+  }
+  h2 {
+    font-size: 34px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+    &.lg {
+      font-size: 14px;
+    }
+  }
+}

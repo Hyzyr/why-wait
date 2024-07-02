@@ -1,5 +1,6 @@
 .welcome {
   margin: auto;
+  padding: 15px 0;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -32,6 +33,34 @@
         flex-basis: 40%;
         font-size: 20px;
         min-height: 4em;
+      }
+    }
+  }
+}
+
+@mixin home-1025 {
+  .welcome {
+    &__row {
+      .button {
+        &._xlg {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+@mixin home-768 {
+  .welcome {
+    &__row {
+      max-width: 380px;
+
+      .button {
+        width: 100%;
+        &._xlg {
+          width: unset;
+          font-size: 16px;
+          min-height: 3.5em;
+        }
       }
     }
   }

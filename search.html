@@ -25,20 +25,28 @@
           <a href="/" class="header__inner-logo logo">
             <img src="./images/logo.svg" alt="WhyWait" />
           </a>
-          <div class="header__inner-search">
-            <div class="input">
-              <button class="input__icon-right">
-                <span class="icon material-symbols-outlined">search</span>
-              </button>
-              <input type="text" placeholder="Search here... " />
+          <nav class="nav" id="menu">
+            <div class="nav__inner">
+              <div class="header__inner-search">
+                <div class="input">
+                  <button class="input__icon-right">
+                    <span class="icon material-symbols-outlined">search</span>
+                  </button>
+                  <input type="text" placeholder="Search here... " />
+                </div>
+                <div class="nav__item _pro">
+                  <div class="nav__item-text">Get acces to</div>
+                  <a href="#" class="logo logo--pro">
+                    <img src="images/logo-pro.svg" alt="WhyWait pro" />
+                  </a>
+                </div>
+              </div>
+              <div class="header__inner-actions">
+                <button class="button button--main-primary">Login</button>
+              </div>
             </div>
-            <a href="#" class="logo logo--pro">
-              <img src="images/logo-pro.svg" alt="WhyWait pro" />
-            </a>
-          </div>
-          <div class="header__inner-actions">
-            <button class="button button--main-primary">Login</button>
-          </div>
+          </nav>
+          <button class="burger" id="menuBtn"><span></span></button>
         </div>
       </div>
     </header>
@@ -142,6 +150,6 @@
       </div>
     </main>
     <!-- #main end -->
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
   </body>
 </html>
