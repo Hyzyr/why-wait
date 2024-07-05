@@ -966,19 +966,16 @@ svg {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  max-width: 325px;
+  width: calc(50% - 16px);
 }
 .join .input__outer._lg {
-  max-width: unset;
+  width: 100%;
 }
 .join .input textarea {
   min-height: 124px;
 }
 .join .button {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  max-width: 325px;
+  width: calc(50% - 16px);
   padding: 0.7em 1em;
 }
 .join h3 {
@@ -1313,6 +1310,15 @@ svg {
   }
   .join__group-row {
     gap: 20px;
+  }
+  .join .input__outer {
+    width: calc(50% - 10px);
+  }
+  .join .input._lg {
+    width: 100%;
+  }
+  .join .button {
+    width: calc(50% - 10px);
   }
   .login__content {
     gap: 30px;

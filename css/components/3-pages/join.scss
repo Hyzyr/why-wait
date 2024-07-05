@@ -18,9 +18,9 @@
   .input {
     &__outer {
       flex: 1;
-      max-width: 325px;
+      width: calc(50% - 16px);
       &._lg {
-        max-width: unset;
+        width: 100%;
       }
     }
     textarea {
@@ -28,8 +28,7 @@
     }
   }
   .button {
-    flex: 1;
-    max-width: 325px;
+    width: calc(50% - 16px);
     padding: 0.7em 1em;
   }
   h3 {
@@ -50,6 +49,17 @@
         gap: 20px;
       }
     }
+    .input {
+      &__outer {
+        width: calc(50% - 10px);
+      }
+      &._lg {
+        width: 100%;
+      }
+    }
+    .button {
+      width: calc(50% - 10px);
+    }
   }
 }
 @mixin join-460 {
@@ -61,8 +71,6 @@
         gap: 15px;
         width: 100%;
       }
-    }
-    .seperator {
     }
     .input__outer,
     .button {
