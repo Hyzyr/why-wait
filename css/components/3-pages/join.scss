@@ -26,6 +26,9 @@
     textarea {
       min-height: 124px;
     }
+    input[type="date"]::-webkit-calendar-picker-indicator {
+      opacity: 0.65;
+    }
   }
   .button {
     width: calc(50% - 16px);

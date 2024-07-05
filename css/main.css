@@ -974,6 +974,9 @@ svg {
 .join .input textarea {
   min-height: 124px;
 }
+.join .input input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0.65;
+}
 .join .button {
   width: calc(50% - 16px);
   padding: 0.7em 1em;
