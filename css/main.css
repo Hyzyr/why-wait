@@ -1093,12 +1093,13 @@ svg {
 }
 .login h3 {
   font-weight: 900;
+  color: #222;
 }
 .login h3 span {
   color: #40A2E3;
 }
 .login .input input {
-  padding: 0.7em 2em 0.7em 1em;
+  padding: 0.7em 2.5em 0.7em 1em;
 }
 .login .input__icon-right {
   border-left: unset;
