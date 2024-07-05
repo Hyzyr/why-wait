@@ -5,12 +5,13 @@
   font-size: 16px;
 
   input,
-  textarea {
-    padding: 0.5em 1em;
+  textarea,
+  .input__selected {
+    padding: 0.5em 0.65em;
     border-radius: 5px;
     width: 100%;
     background-color: $white;
-    border: 1px solid $black_30;
+    border: 1px solid $black_40;
     resize: none;
     transition: 0.3s ease-out;
 
@@ -25,6 +26,7 @@
     &::placeholder {
       color: $black_70;
       transition: 0.13s ease-out;
+      font-weight: 300;
     }
   }
   input:focus,
@@ -33,7 +35,7 @@
     border-color: $black_70;
 
     &::placeholder {
-      color: $black_30;
+      color: $black_50;
     }
   }
 
@@ -73,12 +75,127 @@
 
   &--border {
     input,
-    textarea {
+    textarea,
+    .input__selected {
       border: 1px solid $black_60;
     }
     input:focus,
     textarea:focus {
       border-color: $black_90;
+    }
+  }
+
+  &--select {
+    position: relative;
+    .input {
+      &__selected {
+        padding: 0.52em 0.65em;
+        cursor: pointer;
+        position: relative;
+        &:after {
+          content: "";
+          border: solid $black_80;
+          border-width: 0 1px 1px 0;
+          display: inline-block;
+          padding: 3.5px;
+          position: absolute;
+          right: 12px;
+          top: 42%;
+          transform: translateY(-50%) rotate(45deg);
+          transition: 0.3s ease;
+        }
+      }
+      &__dropdown {
+        overflow: auto;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: calc(100% + 7px);
+        display: flex;
+        flex-direction: column;
+        border: 1px solid $black_60;
+        border-radius: 5px;
+        max-height: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.3s ease-in-out;
+        box-shadow: 0 0 5px rgba($black, 0.1);
+        background: $white;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        &-item {
+          padding: 8px 10px;
+          border-bottom: 1px solid $black_40;
+          cursor: pointer;
+          transition: 0.3s ease;
+          &:hover {
+            color: $primary;
+          }
+          &:last-child {
+            border: unset;
+          }
+        }
+      }
+    }
+    ._muted {
+      color: $black_70;
+      transition: 0.13s ease-out;
+      font-weight: 300;
+    }
+    &.active {
+      z-index: 1;
+      .input {
+        &__selected {
+          &::after {
+            top: 58%;
+            transform: translateY(-50%) rotate(225deg);
+          }
+        }
+        &__dropdown {
+          max-height: 30vh;
+          opacity: 1;
+          pointer-events: all;
+        }
+      }
+    }
+  }
+
+  &--password {
+    .input__icon-right {
+      border-left: unset;
+      .icon {
+        font-size: 1.3em;
+      }
+      span {
+        &:nth-child(1) {
+          display: none;
+        }
+      }
+    }
+    &._visable {
+      .input__icon-right {
+        border-left: unset;
+        span {
+          &:nth-child(1) {
+            display: flex;
+          }
+          &:nth-child(2) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  &__outer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    label {
+      font-size: 16px;
+      color: $black_100;
+      font-weight: 500;
     }
   }
 }

@@ -1,0 +1,125 @@
+.login {
+  min-height: 100vh;
+  background: $white;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0;
+  &__inner {
+    margin: auto 0;
+    &-row {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      justify-content: space-between;
+    }
+  }
+  &__content {
+    width: calc(50% - 20px);
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 42px;
+    &-group {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    &-box {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+  &__image {
+    max-width: 348px;
+    width: calc(50% - 20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  p {
+    color: $black_80;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  a {
+    color: $primary;
+    transition: 0.3s ease;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  h3 {
+    font-weight: 900;
+    span {
+      color: $primary;
+    }
+  }
+  .input {
+    input {
+      padding: 0.7em 2em 0.7em 1em;
+    }
+    &__icon-right {
+      border-left: unset;
+      pointer-events: none;
+      color: $black_60;
+      .material-symbols-outlined {
+        font-size: 18px;
+      }
+    }
+  }
+  .button {
+    font-weight: 600;
+    padding: 0.68em 1em;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 940px;
+  }
+}
+
+@mixin login-1160 {
+  .login {
+    .container {
+      max-width: 900px;
+    }
+  }
+}
+@mixin login-940 {
+  .login {
+    &__content {
+      gap: 30px;
+    }
+  }
+}
+@mixin login-768 {
+  .login {
+    &__inner {
+      &-row {
+        flex-direction: column;
+      }
+    }
+    &__image {
+      order: -1;
+      width: 100%;
+      max-width: 360px;
+    }
+    &__content {
+      width: 100%;
+      max-width: 360px;
+    }
+  }
+}

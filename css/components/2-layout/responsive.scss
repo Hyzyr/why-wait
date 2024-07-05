@@ -8,13 +8,14 @@
   @include typo-1160;
   @include components-1160;
   @include header-1160;
+  @include login-1160;
 }
 @media (max-width: 1025px) {
   .container {
     padding: 0 30px;
   }
   @include components-1025;
-  @include containers-1025 ;
+  @include containers-1025;
   @include header-1025;
   @include home-1025;
 }
@@ -23,6 +24,8 @@
   .container {
     padding: 0 25px;
   }
+  @include join-940;
+  @include login-940;
 }
 @media (max-width: 768px) {
   .container {
@@ -32,6 +35,7 @@
   @include containers-768;
   @include header-768;
   @include home-768;
+  @include login-768;
 }
 @media (max-width: 580px) {
   ._hideMob {
@@ -39,4 +43,5 @@
   }
 }
 @media (max-width: 460px) {
+  @include join-460;
 }
