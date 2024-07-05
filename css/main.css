@@ -977,6 +977,11 @@ svg {
 .join .input input[type=date]::-webkit-calendar-picker-indicator {
   opacity: 0.65;
   cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.join .input input[type=date]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
 }
 .join .button {
   width: calc(50% - 16px);
