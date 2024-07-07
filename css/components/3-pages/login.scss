@@ -44,6 +44,21 @@
       font-size: 18px;
       font-weight: 600;
     }
+    &-title {
+      font-size: 32px;
+      font-weight: 900;
+      line-height: 1;
+      color: $dark;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 0.3em;
+      .logo {
+        font-size: inherit;
+        height: 1.15em;
+      }
+    }
   }
   &__image {
     max-width: 348px;
@@ -109,6 +124,9 @@
     }
     &__content {
       gap: 30px;
+      &-title {
+        font-size: 30px;
+      }
     }
   }
 }
@@ -124,7 +142,7 @@
       &-row {
         flex-direction: column;
         justify-content: space-evenly;
-        gap: 25px;
+        gap: 30px;
       }
     }
     &__image {
@@ -135,6 +153,10 @@
     &__content {
       width: 100%;
       max-width: 360px;
+      gap: 25px;
+      &-title {
+        font-size: 28px;
+      }
     }
   }
 }
@@ -143,6 +165,11 @@
   .login {
     &__inner {
       padding: 40px 20px;
+    }
+    &__content {
+      &-title {
+        font-size: 26px;
+      }
     }
   }
 }
