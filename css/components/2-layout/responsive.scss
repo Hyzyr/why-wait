@@ -8,7 +8,6 @@
   @include typo-1160;
   @include components-1160;
   @include header-1160;
-  @include login-1160;
 }
 @media (max-width: 1025px) {
   .container {
@@ -44,4 +43,5 @@
 }
 @media (max-width: 460px) {
   @include join-460;
+  @include login-460;
 }

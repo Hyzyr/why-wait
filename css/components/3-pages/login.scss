@@ -1,16 +1,25 @@
 .login {
   min-height: 100vh;
-  background: $white;
   display: flex;
   flex-direction: column;
-  padding: 60px 0;
+  padding: 30px 0;
   &__inner {
-    margin: auto 0;
+    width: 100%;
+    max-width: 1100px;
+    padding: 120px 40px;
+    margin: auto;
+    background: $white;
+    box-shadow: 0px 8px 10.8px rgba(0, 0, 0, 0.01),
+      0px 0px 44.1px rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+
     &-row {
       display: flex;
       align-items: center;
       gap: 40px;
       justify-content: space-between;
+      max-width: 820px;
+      margin: 0 auto;
     }
   }
   &__content {
@@ -63,7 +72,7 @@
   h3 {
     font-weight: 900;
     color: $black-1;
-    span {
+    .text--primary {
       color: $primary;
     }
   }
@@ -88,19 +97,16 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    max-width: 940px;
   }
 }
 
 @mixin login-1160 {
-  .login {
-    .container {
-      max-width: 900px;
-    }
-  }
 }
 @mixin login-940 {
   .login {
+    &__inner {
+      padding: 80px 30px;
+    }
     &__content {
       gap: 30px;
     }
@@ -108,7 +114,9 @@
 }
 @mixin login-768 {
   .login {
+    padding: 15px 0;
     &__inner {
+      padding: 60px 30px;
       &-row {
         flex-direction: column;
       }
@@ -121,6 +129,14 @@
     &__content {
       width: 100%;
       max-width: 360px;
+    }
+  }
+}
+
+@mixin login-460 {
+  .login {
+    &__inner {
+      padding: 40px 20px;
     }
   }
 }
